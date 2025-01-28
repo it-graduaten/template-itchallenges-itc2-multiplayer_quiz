@@ -69,9 +69,9 @@ pnpm playwright
 
 Dit zal een browser openen en de tests uitvoeren.
 
-### Werking en verduidelijking
+## Werking en verduidelijking
 
-#### Algemeen
+### Algemeen
 
 Alle nodige code voor de applicatie bevindt zich in de `src` map. De applicatie is opgedeeld in verschillende onderdelen:
  - `src/models`: Hierin bevinden zich de modellen die gebruikt worden in de applicatie.
@@ -83,13 +83,22 @@ Alle nodige code voor de applicatie bevindt zich in de `src` map. De applicatie 
  - `src/global.ts`: Hierin bevinden zich de globale variabelen die gebruikt worden in de applicatie.
  - `index.html`: Dit is de HTML-pagina die de applicatie bevat. Hiermee start de applicatie.
 
-#### Utils
+### Utils
 
 In het bestand `src/utils/index.ts` vind je functionaliteit om elementen op de webpagina's te verbergen en te tonen. Daarnaast vind je er ook een methode om een alert te tonen.
 
 ## Opdracht
 
 Je zal in deze opdracht gevraagd worden om de bestaande code uit te breiden tot een volledig werkende quiz applicatie. Gebruik de testen om te controleren of je code werkt. Je kan de testen ook gebruiken om te achterhalen wat de gewenste functionaliteit is.
+
+Hierbij nog enkele vereisten:
+- Bij het manueel toevoegen van vragen moet je rekening houden met volgende vereisten:
+    - Een vraag bestaat uit minstens 5 woorden
+    - Er moeten minimaal 2 antwoorden zijn
+    - Er moet minimaal 1 correct antwoord zijn
+- Bij het toevoegen van een speler(naam) moet je rekening houden met volgende vereisten:
+    - Een naam moet uniek zijn
+    - Een naam mag niet leeg zijn
 
 Hieronder vind je nog enkele tips om je op weg te helpen:
 - Begin met het implenteren van een singleplayer quiz. Dit zal je later op weg helpen met de multiplayer quiz.
