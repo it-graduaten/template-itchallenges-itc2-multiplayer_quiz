@@ -43,7 +43,10 @@ Deze app bevat een CI/CD pipeline geschreven met behulp van [GitHub Actions](htt
 1. Uitchecken van de code
 2. Installeren van de benodigde packages
 3. Bouwen van de app
-4. Uploaden van de app naar een webserver
+4. Unit tests uitvoeren
+5. E2E tests uitvoeren
+
+Je vindt deze pipeline terug in het bestand `.github/workflows/build-and-test.yml`.
 
 #### Unit tests
 
@@ -56,7 +59,7 @@ pnpm vitest
 Je krijgt nu een overzicht van alle tests en of ze geslaagd zijn. Om dit overzicht te openen in de browser, voer je het volgende commando uit:
 
 ```bash
-pnpm vitest -- --ui
+pnpm vitest --ui
 ```
 
 #### E2E tests
@@ -101,6 +104,7 @@ Hierbij nog enkele vereisten:
     - Een naam mag niet leeg zijn
 
 Hieronder vind je nog enkele tips om je op weg te helpen:
+- Begin met de code voor de modellen en services. Je kan de modellen testen met de unit tests. Eens deze werken, kan je overgaan tot de code voor de pagina's. 
 - Begin met het implenteren van een singleplayer quiz. Dit zal je later op weg helpen met de multiplayer quiz.
 - Begin met het implenteren van de API-vragen. Dit zal je later op weg helpen met de vragen die je zelf zal toevoegen.
 
