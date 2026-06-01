@@ -1,4 +1,5 @@
-import {expect, Page} from "@playwright/test";
+import {expect} from "@playwright/test";
+import type {Page} from "@playwright/test";
 
 export const completeHomePage = async (page: Page, amountOfPlayers: number = 1, amountOfQuestions: number = 1, typeOfQuestions: string = 'custom') => {
     const inputQuestionAmount = page.getByTestId('input-question-amount');
